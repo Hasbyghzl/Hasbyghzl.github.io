@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+
+    <title>Halaman Validasi</title>
+</head>
+<body>
+    <div class="box">
+        <div class="container">
+            <div class="header">
+                <h1 class="title" class="form-label">Form Register</h1>
+                <span class="description">Validasi Input menggunakan HTML5</span>
+            </div>
+
+            <form autocomplete="off">
+            <div class="form-group">
+                <label for="nama" class="form-label"><span>Nama</span></label>
+                <input type="text" id="nama" class="form-input" placeholder="Masukan Nama Anda" required>
+            </div>
+            <div class="form-group">
+                <label for="usia" class="form-label"><span>Usia</span></label>
+                <input type="number" id="usia" min="17" max="30" class="form-input" placeholder="Minimal Usia 17-30 Tahun" required>
+            </div>
+            <div class="form-group">
+                <label for="email" class="form-label"><span>Email</span></label>
+                <input type="email" id="email" class="form-input" placeholder="contoh123@gmail.com" required>
+            </div>
+            <div class="form-group">
+                <label for="website" class="form-label"><span>Website</span></label>
+                <input type="url" id="nama" class="form-input" class="form-input" placeholder="https://contoh@gmail.com" required>
+            </div>
+            <div class="form-group">
+                <label for="password" class="form-label"><span>Password</span></label>
+                <input type="password" id="password" minlength="8" class="form-input" placeholder="Minimal Password Memiliki 8 Karakter" required>
+            </div>
+            <div>
+                <button class="btn-submit">Submit</button>
+            </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

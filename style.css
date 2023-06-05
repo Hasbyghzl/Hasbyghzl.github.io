@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: #161616;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    width: 1440px;
+    display: flex;
+    flex-direction: column;
+    padding: 34px 214px 34px 214px;
+    overflow: hidden;
+}
+
+.header {
+    margin-bottom: 56px;
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    justify-content: center;
+    display: flex;
+    margin-bottom: 4px;
+
+    font-style: normal;
+    font-size: 32px;
+    text-align: center;
+    
+    color: #FFFFFF;
+}
+
+.description {
+    justify-content: center;
+    display: flex;
+
+    font-size: 16px;
+    text-align: center;
+
+    color: #4F5152;
+}
+
+.form-group{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 28px;
+    margin-right: 4px;
+    margin-left: 4px;
+}
+
+.form-group input:focus:valid {
+    outline: 2px solid #068BB3;
+    filter: drop-shadow(0px 0px 4px rgba(6, 139, 179, 0.5));
+    transition: 500ms;
+}
+
+.form-group input:focus:invalid {
+    outline: 2px solid #ED4337;
+    filter: drop-shadow(0px 0px 4px rgba(237, 167, 55, 0.5));
+    transition: 500ms;
+}
+
+.form-group input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+.form-label {
+    margin-bottom: 8px;
+
+    font-size: 16px;
+    
+    color: #FFFFFF;
+}
+
+.form-input {
+    height: 50px;
+    width: 100%;
+    background-color: #222222;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 15px;
+    padding: 20px;
+    outline: none;
+}
+
+.form-input::placeholder {
+    color: #4F5152;
+}
+
+.btn-submit {
+    background-color:  rgba(0, 166, 216, 0.8);
+    border: none;
+    border-radius: 30px;
+    margin-top: 4px;
+    padding: 20px;
+    color: #FFFFFF;
+    height: 60px;
+    width: 25%;
+    cursor: pointer;
+    float: right;
+    text-align: center;
+}
+
+.btn-submit:hover {
+    background-color: #005D79;
+}
